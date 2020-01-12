@@ -10,7 +10,6 @@ for i in range(2, N + 1):
   inverse.append((-inverse[MOD % i] * (MOD // i)) % MOD)
   kai2.append((kai2[-1] * inverse[-1]) % MOD)
 
-
 def comb(n, r):
   if r < 0 or r > n:
     return 0
